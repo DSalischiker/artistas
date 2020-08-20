@@ -25,7 +25,7 @@ const MainArtist = () => {
     return (
         <div className='Main-artist'>
             <h1>Artista</h1>
-            {artist.name}
+            <h2>{artist.name}</h2>
             <img className='artist-img' src={artist.avatar} alt={artist.name} />
             <p>{artist.genre}</p>
         </div>

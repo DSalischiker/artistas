@@ -4,8 +4,8 @@ import Axios from 'axios';
 const MainHome = () => {
     /* var request = require('request'); // "Request" library
 
-    var client_id = 'b5e9b1c1691a43d3bdf787c9cd5f1cc1'; // Your client id
-    var client_secret = '68290162d1a04518abf441b36d09d922'; // Your secret
+    var client_id = process.env.CLIENT_ID; // Your client id
+    var client_secret = process.env.CLIENT_SECRET; // Your secret
 
     // your application requests authorization
     var authOptions = {
