@@ -1,0 +1,186 @@
+.App {
+  text-align: center;
+  min-height: 100vh;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  height: 10vh;
+  background-color: aliceblue;
+}
+
+.App-header {
+  height: 10vh;
+  background-color: #61dafb;
+  color: #282c34;
+  padding: 0 20px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  font-weight: 500;
+}
+
+.App-footer {
+  height: 10vh;
+  background-color: #282c34;
+  color: #61dafb;
+  padding: 0 20px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  font-weight: 500;
+}
+
+.App-main {
+  background-color: aliceblue;
+  color: #282c34;
+  padding: 0 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-weight: 500;
+  min-height: 80vh;
+
+
+}
+
+.Main-grid {
+  width: 90%;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(3, minmax(300px, 1fr));
+  column-gap: 1em;
+}
+
+@media(max-width: 1300px) {
+  .Main-grid {
+    width: 100%;
+  }
+
+  .Card-text {
+    font-size: 0.8em;
+  }
+}
+
+@media(max-width: 1000px) {
+  .Main-grid {
+    width: 100%;
+    grid-template-columns: repeat(2, minmax(300px, 1fr));
+  }
+}
+
+@media(max-width: 800px) {
+  .Main-grid {
+    width: 100%;
+    grid-template-columns: 1fr;
+
+  }
+
+  .Card-text {
+    font-size: 1em;
+  }
+}
+
+.Main-card {
+  background-color: aliceblue;
+  margin: 0 auto;
+  /* padding: 1em 1em; */
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: flex-start;
+  border: 2px solid #282c34;
+  border-radius: 5px;
+  margin-bottom: 1em;
+
+  overflow: hidden;
+  transition: 0.7s ease;
+}
+
+.Main-card:hover {
+  -webkit-transform: scale(1.05);
+  -ms-transform: scale(1.05);
+  transform: scale(1.05);
+  transition: 0.7s ease;
+  border-color: #61dafb;
+  color: #61dafb;
+  background-color: #282c34;
+}
+
+.Main-card img {
+  max-width: 40%;
+
+
+}
+
+.Card-text {
+  margin-top: 1em;
+  width: 100%;
+  margin-left: 2em;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+
+.Card-text h2 {
+
+  display: inline-block;
+  margin: 0;
+}
+
+.Card-text p {
+  margin: 0;
+}
+
+@media(max-width: 800px) {
+  .Main-card {
+    width: 100%;
+
+  }
+
+  .Main-card img {
+    width: 40%;
+  }
+
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+a {
+  text-decoration: none;
+  color: #282c34;
+}
+
+.Main-artist {
+  height: 80vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.artist-img {
+  width: 20%;
+}
