@@ -33,11 +33,13 @@ const Header = (props) => {
     }
     return (
         <header className="App-header">
-            {`${sayHi} ${name}`}
-            <Link to='/'>Home</Link>
-            <select name='cat' id='' onChange={handleCategorySelect}>
-                {categories.map(category => <option key={category} value={category}>{category}</option>)}
-            </select>
+            <Link to='/'>Artistas</Link>
+            <div className='Header-nav'>
+                <Link to='/'>Home</Link>
+                <select className='Header-select' name='cat' id='' onChange={handleCategorySelect}>
+                    {categories.map(category => <option key={category} value={category}>{category}</option>)}
+                </select>
+            </div>
         </header>
     );
 }

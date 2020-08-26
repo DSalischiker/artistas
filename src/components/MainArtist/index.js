@@ -24,10 +24,12 @@ const MainArtist = () => {
     }, [])
     return (
         <div className='Main-artist'>
-            <h1>Artista</h1>
-            <h2>{artist.name}</h2>
-            <img className='artist-img' src={artist.avatar} alt={artist.name} />
-            <p>{artist.genre}</p>
+            <div className='Artist-card'>
+                <h1 className='Artist-title'>Artista</h1>
+                <h2 className='Artist-name'>{artist.name}</h2>
+                <img className='Artist-img' src={artist.avatar} alt={artist.name} />
+                <p className='Artist-genre'>{artist.genre}</p>
+            </div>
         </div>
     )
 }

@@ -31,6 +31,25 @@
   font-weight: 500;
 }
 
+.Header-nav {
+  display: flex;
+  width: fit-content;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.Header-nav a {
+  margin-right: 2em;
+}
+
+.Header-select {
+  padding: 0.5em;
+  border-radius: 5px;
+  border: 2px solid #282c34;
+}
+
+
+
 .App-footer {
   height: 10vh;
   background-color: #282c34;
@@ -65,34 +84,7 @@
   column-gap: 1em;
 }
 
-@media(max-width: 1300px) {
-  .Main-grid {
-    width: 100%;
-  }
 
-  .Card-text {
-    font-size: 0.8em;
-  }
-}
-
-@media(max-width: 1000px) {
-  .Main-grid {
-    width: 100%;
-    grid-template-columns: repeat(2, minmax(300px, 1fr));
-  }
-}
-
-@media(max-width: 800px) {
-  .Main-grid {
-    width: 100%;
-    grid-template-columns: 1fr;
-
-  }
-
-  .Card-text {
-    font-size: 1em;
-  }
-}
 
 .Main-card {
   background-color: aliceblue;
@@ -146,17 +138,20 @@
   margin: 0;
 }
 
-@media(max-width: 800px) {
-  .Main-card {
-    width: 100%;
-
-  }
-
-  .Main-card img {
-    width: 40%;
-  }
+.Main-category {
+  background-color: aliceblue;
+  color: #282c34;
+  padding: 0 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-weight: 500;
+  min-height: 80vh;
 
 }
+
+
 
 @keyframes App-logo-spin {
   from {
@@ -181,6 +176,95 @@ a {
   align-items: center;
 }
 
-.artist-img {
-  width: 20%;
+.Artist-card {
+  width: 30%;
+  height: 80%;
+  background-color: aliceblue;
+  margin: 0 auto;
+  /* padding: 1em 1em; */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  border: 2px solid #282c34;
+  border-radius: 5px;
+
+
+  overflow: hidden;
+  transition: 0.7s ease;
+
+
+
+}
+
+.Artist-card:hover {
+  -webkit-transform: scale(1.05);
+  -ms-transform: scale(1.05);
+  transform: scale(1.05);
+  transition: 0.7s ease;
+  border-color: #61dafb;
+  color: #61dafb;
+  background-color: #282c34;
+}
+
+.Artist-title {}
+
+.Artist-name {}
+
+.Artist-img {
+  width: 50%;
+}
+
+.Artist-genre {}
+
+@media(max-width: 1300px) {
+  .Main-grid {
+    width: 100%;
+  }
+
+  .Card-text {
+    font-size: 0.8em;
+  }
+
+  .Artist-card {
+    width: 50%;
+  }
+}
+
+@media(max-width: 1000px) {
+  .Main-grid {
+    width: 100%;
+    grid-template-columns: repeat(2, minmax(300px, 1fr));
+  }
+
+  .Artist-card {
+    width: 60%;
+  }
+}
+
+@media(max-width: 800px) {
+  .Main-grid {
+    width: 100%;
+    grid-template-columns: 1fr;
+
+  }
+
+  .Card-text {
+    font-size: 1em;
+  }
+}
+
+@media(max-width: 800px) {
+  .Main-card {
+    width: 100%;
+
+  }
+
+  .Main-card img {
+    width: 40%;
+  }
+
+  .Artist-card {
+    width: 80%;
+  }
 }
